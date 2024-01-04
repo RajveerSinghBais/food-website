@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+ /* navbar logo and image */
+
+ #logo{
+margin: 39px;
+ }
+
+ #logo img{
+    height: 40px;
+    margin: 20px;
+ }
+
+ #navbar ul{
+    display: flex;
+ }
+
+ #navbar::before{
+    content: "";
+    background-color: rgb(32, 32, 31);
+    position:absolute;
+    top: 0%;
+    height: 62%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+
+ }
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(48, 58, 60);
+    color: rgb(227, 223, 223);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#home::before{
+    content: "";
+    background: url(../gray2.jpg);
+    position:absolute;
+    height: 45%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+#home h1{
+text-align:center;
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.h-primary{
+font-size: 3.2rem;
+padding: 15px;
+}
+
+.btn{
+    padding: 5px 20px;
+    margin: 15px;
+    background-color: rgba(35, 25, 68, 0.305);
+    border: 2px solid rgba(138, 120, 197, 0.305);
+    color: rgb(203, 245, 231);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+ .btn:hover{
+    background-color: rgba(55, 50, 72, 0.612);
+    cursor: pointer;
+ }
+
+ /* box */
+
+ :root{
+    --primary-color:  rgb(149, 149, 148);
+    --shadow: 3px 3px 2px gray;
+}
+.container{
+    display:flex;
+
+}
+.card{
+    /*--primary-color:  rgb(206, 206, 130);*/
+    padding: 23px 12px;
+    margin: 45px 20px ;
+    background-color: var(--primary-color);
+    box-shadow: 5px 7px 10px rgb(62, 62, 62);
+    text-align: center;
+
+}
+.card h2{
+    /*--shadow: 3px 3px 2px gray;*/
+    text-shadow: var(--shadow);
+}
+
+/* marutinandan */
+
+#contect-us{
+    position: relative;
+    
+   
+}
+
+#contect-us::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../gray2.jpg ') no-repeat center center/cover;
+}
+
+
+input{
+    display: block;
+     width: 300px;
+     margin: 4px auto;
+     padding: 5px;
+     border: 2px solid black;
+     border-radius: 7px;
+}
+h1{
+    text-align:center;
+    }
+
+    .container2 button{
+        display: block;
+        width: 200px;
+        margin: 6px auto;
+     }
+
+    
+
